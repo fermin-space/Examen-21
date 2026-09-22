@@ -1,0 +1,8 @@
+temperatura = float(input("Ingresá la temperatura: "))
+
+if temperatura < 18:
+    print("La temperatura es baja.")
+elif temperatura <= 25:
+    print("La temperatura es moderada.")
+else:
+    print("La temperatura es alta.")

@@ -1,42 +1,18 @@
-# Examen práctico - Terminal de Expedición Espacial
-# Nombre y apellido:
-# Curso:
-#
-# IMPORTANTE:
-# Resolver el programa siguiendo las etapas indicadas en el README.md.
-# Realizar los commits y push cuando se indique.
-#
-# No borrar estos comentarios.
-
-
-# =========================
-# ETAPA 1 - INICIO
-# =========================
-
-# Crear las variables necesarias.
-# Crear las listas de destinos y costos.
-# Pedir el nombre del piloto.
-
-
-# =========================
-# ETAPA 2 - NAVEGACIÓN
-# =========================
-
-# Mostrar el menú y procesar la opción seleccionada.
-# Utilizar las listas para obtener destino y costo.
-
-
-# =========================
-# ETAPA 3 - CICLO PRINCIPAL
-# =========================
-
-# Modificar el programa para que continúe funcionando
-# hasta que el usuario decida finalizar la expedición.
-
-
-# =========================
-# ETAPA 4 - ESTADO Y RESUMEN
-# =========================
-
-# Mostrar el estado de la nave.
-# Recorrer las listas con un for para mostrar destinos y costos.
+print("escriba su nombre de usuario")
+nombre_de_usuario = input()
+combustible = 100
+luna = 0
+marte = 0
+saturno = 0
+destinos = ["luna", "marte", "saturno"]
+costos = [20, 35, 50]
+print("bienvenido ", nombre_de_usuario)
+print("su combustible inicial es:", combustible)
+print("elija destino", destinos)
+a = input("elija destino ")
+if a == marte:
+    print("sucantida de combustible es: ",costos[0])
+elif a == luna:
+    print("la cantidad de combustible es: ",costos[1])
+else: 
+    print("su cantidad de combustible es: ",costos[-1])
